@@ -2,6 +2,10 @@
 
 HTML/CSS/JS puzzle game
 
+## Demo
+
+Live demo can be found [here](https://tonai.github.io/lasertank3/html/game.html)
+
 ## Getting Started
 First you need to install [Node](http://nodejs.org/).
 
