@@ -1,9 +1,7 @@
 var $ = require('jquery');
 var options = {
     // Global options
-    backendBaseUrl: (typeof isProduction == 'boolean' && isProduction === true)?
-        'http://82.216.19.180:8961/backend/':
-        '/lasertank/src/backend/',
+    backendBaseUrl: 'https://urdre8k8nk.execute-api.eu-west-3.amazonaws.com/dev/',
     spriteSheetSrc: '../images/spriteSheet.png',
     imageWidth:     29,
     imageHeight:    29,
@@ -49,9 +47,9 @@ $.extend(
     options,
     {
        // Backend mapping
-        loadPopInContentUrl:  options.backendBaseUrl + 'loadContent.php',
-        loadPopInCallbackUrl: options.backendBaseUrl + 'load.php',
-        savePopInCallbackUrl: options.backendBaseUrl + 'save.php',
+        loadPopInContentUrl:  options.backendBaseUrl + 'list',
+        loadPopInCallbackUrl: options.backendBaseUrl + 'load',
+        savePopInCallbackUrl: options.backendBaseUrl + 'save',
 
         // Move interface options
         moveDuration: options.fireDuration * 2

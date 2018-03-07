@@ -126,6 +126,17 @@ module.exports = function(grunt) {
     },
 
     /* Other tasks */
+    copy: {
+      prod: {
+        files: [{
+          expand: true,
+          cwd: './dev/images/',
+          src: '**',
+          dest: './prod/images/'
+        }],
+      },
+    },
+
     symlink: {
       dev: {
         files: [{
@@ -134,12 +145,6 @@ module.exports = function(grunt) {
         }, {
           src: './dev/images',
           dest: './staging/images'
-        }],
-      },
-      prod: {
-        files: [{
-          src: './dev/images',
-          dest: './prod/images'
         }],
       },
     },
@@ -174,13 +179,14 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
 
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-symlink');
 
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('check',   ['jshint', 'csslint']);
-  grunt.registerTask('dev',     ['check', 'hogan', 'browserify', 'concat', 'symlink:dev']);
-  grunt.registerTask('prod',    ['uglify', 'cssmin', 'htmlmin', 'symlink:prod']);
+  grunt.registerTask('dev',     ['check', 'hogan', 'browserify', 'concat', 'symlink']);
+  grunt.registerTask('prod',    ['uglify', 'cssmin', 'htmlmin', 'copy']);
   grunt.registerTask('all',     ['dev', 'prod']);
   grunt.registerTask('default', ['dev']);
 };

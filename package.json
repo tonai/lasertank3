@@ -2,9 +2,12 @@
   "name": "lasertank",
   "version": "0.0.1",
   "description": "HTML/CSS/JS puzzle game",
+  "homepage": "https://tonai.github.io/lasertank3",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "grunt prod",
+    "deploy": "gh-pages -d prod"
   },
   "repository": "",
   "author": "Tony Cabaye",
@@ -13,9 +16,12 @@
   "devDependencies": {
     "browserify": "~2.25.0",
     "browserify-shim": "~2.0.7",
+    "gh-pages": "^1.1.0",
     "grunt": "~0.4.1",
     "grunt-browserify": "~1.2.0",
+    "grunt-cli": "^1.2.0",
     "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-csslint": "~0.1.2",
     "grunt-contrib-cssmin": "~0.6.1",
     "grunt-contrib-htmlmin": "~0.1.3",
