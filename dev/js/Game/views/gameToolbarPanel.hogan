@@ -1,0 +1,8 @@
+<div class="game-toolbar-panel">
+    <div class="game-toolbar-panel--keys">
+        {{#blocks}}
+            {{>block}}
+        {{/blocks}}
+    </div>
+    <div class="game-toolbar-panel--status"></div>
+</div>

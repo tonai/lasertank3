@@ -1,0 +1,67 @@
+﻿#ground-area {
+    margin: auto;
+    position: relative;
+}
+
+#movable-area, #shot-area, #obscure-area, #play-area, #overlay  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#movable-area canvas, #movable-area img {
+    position: absolute;
+}
+
+#shot-area  div{
+    display: none;
+    position: absolute;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+#obscure-area div {
+    background-color: black;
+    position: absolute;
+}
+
+#overlay {
+    display: none;
+    background-color: black;
+}
+
+.tips {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+}
+
+.tips ul, .tips li {
+    list-style-type: disc;
+    margin-left: 10px;
+}
+
+.tips-bottom {
+    visibility: hidden;
+    width: 100%;
+    text-align: right;
+    font-size: 65%;
+    text-decoration: blink;
+}
+
+#tips-canvas {
+    display: none;
+    position: absolute;
+}

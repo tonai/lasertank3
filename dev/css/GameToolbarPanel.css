@@ -1,0 +1,39 @@
+﻿.game-toolbar-panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: gray;
+    border-top: 1px solid black;
+}
+
+.game-toolbar-panel--status {
+    height: 30px;
+    background-color: rgb(128, 128, 128);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.game-toolbar-panel--status:hover {
+    background-color: #999999;
+}
+
+.game-toolbar-panel--keys {
+    height: 30px;
+    line-height: 30px;
+    background-color: gray;
+    border-left: 1px solid black;
+    float: right;
+    padding-left: 10px;
+}
+
+.game-toolbar-panel--keys div {
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+}
+
+.game-toolbar-panel--keys span {
+    padding-right: 10px;
+}

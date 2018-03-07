@@ -1,0 +1,24 @@
+{{#success}}
+    <form action="" method="post" id="map-load-form" class="load-popin">
+        <ul>
+            {{#data}}
+                <li>
+                    <input
+                        type="radio"
+                        name="map-load-file"
+                        class="load-popin--file"
+                        value="{{file}}"
+                        id="map-load-file-{{id}}"
+                    />
+                    <label for="map-load-file-{{id}}" >
+                        {{name}}
+                    </label>
+                </li>
+            {{/data}}
+        </ul>
+        <input type="submit" value="Submit" id="map-load-submit" class="load-popin--submit"/>
+    </form>
+{{/success}}
+{{^success}}
+    <p>{{data}}</p>
+{{/success}}

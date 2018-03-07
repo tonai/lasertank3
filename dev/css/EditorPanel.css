@@ -1,0 +1,57 @@
+﻿.editor-panel--paint-col,
+.editor-panel--drag-col {
+    width: 170px;
+    height: inherit;
+    background-color: #cccccc;
+    overflow: auto;
+    float: right;
+    margin: 0;
+}
+
+.editor-panel section {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.editor-panel--col-title {
+    text-align: center;
+    background-color: #999999;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.editor-panel--group-title {
+    clear: both;
+    margin-bottom: 5px;
+}
+
+.editor-panel ul {
+    margin-bottom: 20px;
+}
+
+.editor-panel li {
+    float: left;
+    margin: 0 0 5px 5px;
+}
+
+.editor-panel--paint-col a {
+    display: block;
+    width: 100%;
+    height: 25px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #999999;
+    color: #000000;
+}
+
+.editor-panel--paint-col a:hover {
+    background-color: #777777;
+}
+
+.editor-panel--drag-col {
+    float: left;
+}
+
+.editor-panel td {
+  border: 1px solid #000000;
+}

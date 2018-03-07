@@ -1,0 +1,32 @@
+<div class="editor-panel">
+    <div class="editor-panel--paint-col">
+        <h2 class="editor-panel--col-title">{{paintColTitle}}</h2>
+        <section>
+            {{#paintColGroups}}
+                <h3 class="editor-panel--group-title">{{title}}</h3>
+                <ul>
+                    {{#blocks}}
+                        <li>
+                            {{>block}}
+                        </li>
+                    {{/blocks}}
+                </ul>
+            {{/paintColGroups}}
+        </section>
+    </div>
+    <div class="editor-panel--drag-col">
+        <h2 class="editor-panel--col-title">{{dragColTitle}}</h2>
+        <section>
+            {{#dragColGroups}}
+                <h3 class="editor-panel--group-title">{{title}}</h3>
+                <ul>
+                    {{#blocks}}
+                        <li>
+                            {{>block}}
+                        </li>
+                    {{/blocks}}
+                </ul>
+            {{/dragColGroups}}
+        </section>
+    </div>
+</div>

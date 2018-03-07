@@ -1,0 +1,17 @@
+<form action="" method="post" id="map-save-form" class="save-popin">
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <label for="map-save-filename">Name :</label>
+                </td>
+                <td>
+                    <input type="text" name="map-save-filename" id="map-save-filename"/>
+                </td>
+                <td>
+                    <input type="submit" value="Submit"/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>

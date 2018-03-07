@@ -1,0 +1,30 @@
+<form action="" method="post" id="map-new-form" class="new-popin">
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <label for="map-new-width">Width</label>
+                </th>
+                <th>
+                    <label for="map-new-height">Height</label>
+                </th>
+                <th style="font-size:70%;">
+                    (Size in blocks)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="text" name="map-new-width" id="map-new-width" maxlength="2"/>
+                </td>
+                <td>
+                    <input type="text" name="map-new-height" id="map-new-height" maxlength="2"/>
+                </td>
+                <td>
+                    <input type="submit" value="Submit"/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>

@@ -1,0 +1,5 @@
+prod
+staging
+dev/js/views
+node_modules
+.idea

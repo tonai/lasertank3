@@ -1,0 +1,28 @@
+{
+  "name": "lasertank",
+  "version": "0.0.1",
+  "description": "HTML/CSS/JS puzzle game",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Tony Cabaye",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "browserify": "~2.25.0",
+    "browserify-shim": "~2.0.7",
+    "grunt": "~0.4.1",
+    "grunt-browserify": "~1.2.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-csslint": "~0.1.2",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-contrib-htmlmin": "~0.1.3",
+    "grunt-contrib-jshint": "~0.6.2",
+    "grunt-contrib-symlink": "^1.0.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-watch": "~0.5.1",
+    "grunt-hogan": "~0.2.2-2"
+  }
+}

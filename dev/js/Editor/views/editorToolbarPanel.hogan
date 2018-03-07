@@ -1,0 +1,14 @@
+<div class="editor-toolbar-panel">
+    <div class="editor-toolbar-panel--selected-tool">
+        <img src="../images/icon/trash.gif" title="Remove" class="editor-toolbar-panel--trash"/>
+    </div>
+    <div class="editor-toolbar-panel--filename-container">
+      Map name :
+      <span class="editor-toolbar-panel--filename"></span>
+    </div>
+    <div class="editor-toolbar-panel--dimensions-container">
+      Dimensions :
+      <span class="editor-toolbar-panel--dimensions"></span>
+    </div>
+    <div class="editor-toolbar-panel--status"></div>
+</div>

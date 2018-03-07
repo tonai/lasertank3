@@ -1,0 +1,70 @@
+﻿.map-panel {
+    position: relative;
+    overflow: auto;
+    height: 100%;
+    background-color: #333333;
+}
+
+.map-panel--move,
+.map-panel--shot,
+.map-panel--move-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.map-panel--move-controls {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 185px;
+    height: 185px;
+    font-size: 70px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.map-panel--move-controls span {
+  text-decoration: none;
+  color: #808080;
+  text-shadow: 0 0 5px #000000;
+  opacity: 0.5;
+}
+
+.map-panel--shot-control {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #808080;
+    box-shadow: 0 0 5px #000000;
+    opacity: 0.5;
+}
+
+.map-panel--move-controls span.touch,
+.map-panel--shot-control.touch {
+  opacity: 0.8;
+}
+
+.map-panel--map {
+    border-collapse: collapse;
+    display: block;
+}
+
+.map-panel--map td {
+    line-height: 0;
+    overflow: hidden;
+}
+
+.map-panel--move canvas,
+.map-panel--shot canvas {
+    position: absolute;
+}
+
+.map-panel .grabbing {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}

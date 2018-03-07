@@ -1,0 +1,22 @@
+﻿.message-panel {
+    width: 100%;
+    position: absolute;
+    display: none;
+    cursor: auto;
+    overflow: auto;
+}
+
+.message-panel p {
+    padding: 2px 10px ;
+    color: white;
+}
+
+.message-panel--info {
+    color: green;
+    font-weight: bold;
+}
+
+.message-panel--error {
+    color: red;
+    font-weight: bold;
+}
